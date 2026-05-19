@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <h1>Personal Information Form</h1>
+    <div>
+        <form >
+            <div>
+                 <label for="name">Enter Your Name:</label>
+                 <input type="text" id="name" name="username" placeholder="Enter your name...">
+            </div>
+<br>
+            <div>
+
+                <label for="age">Enter your age: </label>
+                <input type="text" id="age" name="age" placeholder="Enter your age..." >
+                <!-- name="age" This input’s value belongs to this name  -->
+            </div>
+            <div>
+                <p>Select Your Gender</p>
+                <input type="radio" id="male" name="gender" value="male" >           
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" >           
+                <label for="female">Female</label>
+
+            </div>
+<br>
+            <div>
+                <label for="bith_date">Enter Date Of birth</label>
+                <input type="date" name="date_of_birth" id="bith_date" >
+            </div>
+<br>
+            <div>
+                <label for="address" "><h3>Address:</h3></label>
+                <textarea name="address" id="address" style="width: 200px; height: 50px;" placeholder="Enter Address..."></textarea>             
+            </div>
+
+
+            <table border="1">
+             <div>
+                <h3>Marks Details</h3>
+                    <thead>
+                        <th>class</th>
+                        <th><label for="passing year">Passing_Year</label></th>
+                        <th><label for="Total Marks">Total_Marks</label></th>
+                        <th><label for="Obtain Marks">Obtain_Marks</label></th>
+                
+                    </thead>
+
+                    <tbody>
+                          <tr>
+                            <td style="text-align: center;">Matric</td>
+                            <td><input type="text" name="Passing year" id="passing year" placeholder="passing year"></td>
+                            <td><input type="text" name="Total marks" id="Total marks" placeholder="Total Marks"></td>
+                            <td><input type="text" name="obtain marks" id="obtain marks" placeholder="Obtain Marks"></td>
+                          </tr>
+
+                          <tr>
+                            <td>Intermediate</td>
+                            <td><input type="text" name="Passing year" id="passing year" placeholder="passing year"></td>
+                            <td><input type="text" name="Total marks" id="Total marks" placeholder="Total Marks"></td>
+                            <td><input type="text" name="obtain marks" id="obtain marks" placeholder="Obtain Marks"></td>
+                          </tr>
+                    </tbody>
+
+                    </div>
+                </table>
+<br>
+
+                <input type="button" value="submit Form">
+             
+
+        </form>      
+    </div>
+</body>
+</html>
