@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ways to Write CSS</title>
+
+    <!-- Internal CSS -->
+    <style>
+      h3 {
+        color: white;
+        background-color: brown;
+        text-align: center;
+      }
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Inline CSS -->
+    <h1 style="color: white; background-color: brown; text-align: center">
+      Welcome Back!
+    </h1>
+
+    <p><b>Welcome Back!</b> is styled using Inline CSS.</p>
+
+    <div>
+      <h2>There are three ways to write CSS:</h2>
+      <ol>
+        <li>
+          Inline CSS - Inline CSS is written directly inside an HTML element
+          using the &lt;style&gt; attribute.
+        </li>
+        <li>
+          Internal CSS - Internal CSS is written inside the &lt;style&gt; tag in the
+          &lt;head&gt; section of an HTML document.
+        </li>
+        <li>
+          External CSS - External CSS is written in a separate .css file and
+          linked to an HTML document using the &lt;link&gt; tag
+        </li>
+      </ol>
+    </div>
+
+    <!-- Internal CSS Example -->
+    <h3>Hello World! I am back to my work.</h3>
+    <p>This heading is styled using Internal CSS.</p>
+
+    <!-- External CSS Example -->
+    <div>
+      <h2>I hope this July we will do something special.</h2>
+      <p>This section can be styled using External CSS.</p>
+    </div>
+  </body>
+</html>
