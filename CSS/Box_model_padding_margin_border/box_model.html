@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box_margin- padding, margin and border</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+
+        body
+        {  
+            /* By Default  */
+            /* margin: 8px;
+            padding: 0; */
+
+            margin: 0px;
+            padding: 0px;
+            /* display: flex; */
+        }
+
+        .box
+        {
+            background-color: aquamarine;
+            padding: 10px;
+            border: 5px solid black;
+            margin: 10px;
+            height: 200px;  /* Total size includes content, padding, and border because of border-box  */
+            width: 300px;
+            box-sizing: border-box; 
+        }
+
+
+
+        .card
+        {  
+            margin: 10px;
+            padding: 30px;
+            border: 5px  solid black;
+            width: 300px;
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+
+     </style>
+
+
+</head>
+<body>
+    <div class="box">
+        About me        
+    </div>
+
+    <div class="card">
+        This is About Card One.       
+    </div>
+
+    <div class="card">
+        This is About Card Two.       
+    </div>
+</body>
+</html>
