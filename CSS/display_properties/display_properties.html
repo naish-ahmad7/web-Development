@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Display: block */
+      .new {
+        display: block;
+        border: 2px solid blue;
+        margin: 10px auto;
+        padding: 10px;
+        text-align: center;
+        text-transform: capitalize;
+        width: 200px;
+        height: 50px;
+      }
+
+      /* Display: inline  and none*/
+      .box {
+        /* display: inline; */
+        display: none;
+        border: 2px solid blue;
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        /* width, height and auto will not work on inline  */
+        /* width: 200px;
+        height: 200px; */
+      }
+
+      /* Display: inline-block */
+
+      .inline_block {
+        
+        display: inline-block;
+        border: 2px solid blue;
+        padding: 10px;
+        width: 200px;
+        height: 60px;
+        text-align: center;
+        margin: 20px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="new">my name is naish.</span>
+    <span class="new">Currently i am learning CSS</span>
+    <span class="new">and later will focus on App.</span>
+
+    <div class="box">HTML</div>
+    <div class="box">CSS</div>
+    <div class="box">JavaScript</div>
+
+    <div class="inline_block">HTML</div>
+    <div class="inline_block">CSS</div>
+    <div class="inline_block">JavaScript</div>
+  </body>
+</html>
