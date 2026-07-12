@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>list style</title>
+
+    <style>
+      nav > ul {
+        background-color: aqua;
+        /* list-style-position: inside; */
+        /* list-style: inside url(image.png); */
+        /* list-style-type: none; */
+        /* list-style-image: ; */
+        list-style: none;
+        display: flex;
+        padding: 10px;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      ul li:hover {
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </body>
+</html>
