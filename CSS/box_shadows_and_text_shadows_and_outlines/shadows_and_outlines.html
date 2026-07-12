@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* box-shadow: x-offset y-offset blur spread color inset; */
+      /* inset - The shadow appears inside the element. */
+
+      /* text-shadow: x-offset y-offset blur color; */
+      p {
+        border: 2px solid black;
+        padding: 10px;
+        box-shadow:
+          1px 1px 5px 1px brown,
+          1px 1px 3px 1px greenyellow,
+          inset 1px 1px 5px rgb(209, 219, 194);
+        text-shadow: 2px 2px 8px grey;
+
+        outline: 2px solid black;
+        outline-offset: 6px;
+        border-radius: 12px;
+        
+        width: 200px;
+        height: 200px;
+        box-sizing: border-box;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, atque
+        incidunt recusandae error id voluptatibus magnam esse ab nisi dolor?
+      </p>
+    </div>
+  </body>
+</html>
