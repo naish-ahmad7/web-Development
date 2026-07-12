@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>overflow</title>
+
+    <style>
+
+      h1{
+        text-transform: capitalize;
+        text-align: center;
+      }
+      .one {
+        border: 2px solid black;
+        width: 300px;
+        height: 150px;
+        margin: 10px auto;
+        padding: 10px;
+
+
+        /* overflow: auto; */
+        /* Show scrollbars only when the content is larger than the container.  */
+
+        /* overflow: scroll; */
+        white-space: nowrap;
+
+        /* overflow-x: auto;
+        overflow-y: hidden; */
+                 /* X    Y*/
+        overflow: auto hidden;
+        
+      }
+
+      .two
+      {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        /* clip is default - Cuts off the extra text.  */
+        /* text-overflow: clip; */
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+        <h1>first box overflow-properties</h1>
+      <p class="one 1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+        molestias vero nesciunt dicta numquam, voluptas nulla perferendis rem
+        enim, porro impedit! Laborum obcaecati voluptate voluptatibus
+        repudiandae, blanditiis perferendis. Provident qui labore quas
+        molestiae, sapiente ex aut rem error consequuntur voluptatibus earum
+        exercitationem? Sed maxime eaque similique adipisci eligendi maiores sit
+        tempore minima quos ea, tenetur est sapiente ullam alias. Voluptates,
+        recusandae beatae minus perferendis ea laborum odio nam natus eveniet
+        incidunt neque quod distinctio, culpa quos. Optio sapiente quia repellat
+        eaque, numquam rem fugiat. Incidunt corporis suscipit praesentium
+        excepturi ab alias eos, rerum dolores sit blanditiis accusantium
+        quibusdam reprehenderit soluta omnis minus tenetur quia dicta voluptas
+        consequatur? Maxime numquam excepturi, error praesentium soluta quo,
+        reiciendis odio recusandae tempore doloremque obcaecati id vitae eveniet
+        magni ratione deserunt cumque nesciunt distinctio, eum eligendi facere
+        delectus et? Assumenda impedit tenetur similique, ipsum recusandae
+        nostrum alias voluptate adipisci praesentium? Debitis sed voluptatum,
+        officiis deserunt, reiciendis consequuntur cum minima explicabo adipisci
+        ut autem similique, tempora quam ea aut! Expedita incidunt ipsum omnis,
+        optio fuga, cumque id explicabo repellendus quibusdam ea officiis
+        sapiente tempora similique repellat eius ipsam ex nisi voluptate nam
+        accusantium, labore eveniet tempore tenetur consectetur. Voluptatum
+        aliquid voluptatibus placeat necessitatibus facilis, consequatur eos!
+      </p>
+
+      <h1>second box overflow + text-overflow</h1>
+      <p class="one two">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad ea maiores
+        odio qui error deserunt unde doloribus molestias id est corrupti earum
+        sed voluptate quasi, fuga aliquam reprehenderit dignissimos quaerat
+        veritatis voluptatibus rerum, dicta perspiciatis! Tempora, repudiandae.
+        Aut dolor odio delectus quasi optio illo natus reiciendis repellendus
+        tenetur cupiditate, nobis aliquid exercitationem, enim nulla similique
+        nihil modi accusantium maxime facilis asperiores a fugiat, magni quod
+        adipisci? Amet qui quibusdam totam explicabo ut tenetur itaque
+        consequatur eum provident dolore. Rerum ullam eligendi optio delectus
+        dolor consequatur itaque voluptatem, a nihil ducimus tenetur dicta
+        quaerat est voluptas asperiores similique incidunt tempore quis?
+      </p>
+    </div>
+  </body>
+</html>
