@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sizing_Unit_CSS</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      html {
+        font-size: 16px;
+      }
+
+      .banner {
+        text-transform: capitalize;
+        width: 80vw;
+        padding: 20px;
+        /* height: 20vh; */
+        background-color: aqua;
+        text-align: center;
+        margin: 20px auto;
+        box-sizing: border-box;
+      }
+
+      .box {
+        text-transform: capitalize;
+        margin: 20px auto;
+        width: 80vw;
+        padding: 20px;
+        border: 2px solid blue;
+        background-color: blue;
+        color: white;
+        text-align: center;
+        box-sizing: border-box;
+      }
+
+      .card {
+        border: 2px solid black;
+        width: 300px;
+        height: 200px;
+        display: flex;
+        /* margin: auto; */
+        justify-content: center;
+        align-items: center;
+      }
+
+      .cards {
+        display: flex;
+        gap: 150px;
+        justify-content: center;
+      }
+
+      .cont {
+        width: 80vw;
+        margin: 20px auto;
+        height: 50vh;
+        border: 2px solid brown;
+        color: white;
+        background-color: brown;
+        font-size: 18px;
+        text-align: center;
+      }
+
+     .cont p {
+        /* em = take the size from the parent (for font-size). if not parent size then default size */
+        /* font-size: 2em; */
+
+        /* rem = take the size from the root (html). */
+        font-size: 2rem;
+      }
+
+
+      /* vmin, vmax, max/min-height, max/min-width */
+
+      .new 
+      {
+        font-size: 2rem;
+        /* width: 80vmax;
+        height: 50vmin; */
+        max-width: 80vmax; 
+        min-height: 50vmin;
+        border: 2px solid black;
+        margin: 20px auto;
+        background-color: brown;
+        color: white;
+        text-align: center;
+      }
+
+      /* it use 50% width of its parent */
+      .new p{
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <h1>Welcome to my Website</h1>
+    </div>
+
+    <div class="box">
+      <h1>Hello world!</h1>
+    </div>
+
+    <div class="box">
+      <h1>Welcome Back!</h1>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h1>Person one</h1>
+      </div>
+
+      <div class="card">
+        <h1>Person Two</h1>
+      </div>
+
+      <div class="card">
+        <h1>Person Three</h1>
+      </div>
+    </div>
+
+    <div class="cont">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+        mollitia aliquid laborum officia molestiae quas iure, dolor animi,
+        molestias repudiandae dolore saepe. Unde, incidunt!
+      </p>
+    </div>
+
+    <div class="new">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+        perferendis, illum aperiam modi dolorem iusto voluptates magnam eum
+        possimus doloribus.
+      </p>
+
+
+    </div>
+  </body>
+</html>
