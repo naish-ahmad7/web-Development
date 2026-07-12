@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascade_ALgorithm</title>
+
+    <style>
+      
+    /* specificity  */
+    /* inline > ID > Class or attribute > element selector > universal selector */
+
+    div h1
+    {
+        color: darkgreen;
+    }
+
+    .red h1
+    {
+        color: red ;
+    }
+
+    h1.yellow
+    {
+        color: yellow;
+    }
+
+    .blue h1
+    {
+        color: blue ;
+    }
+
+    .purple h1 
+    {
+        color: purple;
+    }
+
+    div h2{
+        /* text-transform: capitalize; */
+        color: maroon;
+    } 
+
+    h2#unique  
+    {
+        color: aqua;
+    } 
+
+
+
+    </style>
+</head>
+<body>
+    <div class="red blue purple">
+        <h1 class="yellow">
+            Today, we will learn about Cascade Algorithm.
+        </h1>
+
+        <h2 id="unique" class="maroon">
+            Hello World!
+        </h2>
+    </div>
+</body>
+</html>
