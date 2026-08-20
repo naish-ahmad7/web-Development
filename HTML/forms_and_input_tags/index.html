@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Information Form</title>
+  </head>
+  <body>
+    <h1>Personal Information Form</h1>
+    <div>
+      <form>
+        <div>
+          <label for="name">Enter Your Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="username"
+            placeholder="Enter your name..."
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="age">Enter your age: </label>
+          <input
+            type="text"
+            id="age"
+            name="age"
+            placeholder="Enter your age..."
+            required
+          />
+          <!-- name="age" This input’s value belongs to this name  -->
+        </div>
+        <div>
+          <p>Select Your Gender</p>
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Male</label>
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+            required
+          />
+          <label for="female">Female</label>
+        </div>
+        <br />
+        <div>
+          <label for="bith_date">Enter Date Of birth</label>
+          <input type="date" name="date_of_birth" id="bith_date" required />
+        </div>
+        <br />
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Email"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="phone_number">Phone Number:</label>
+          <input
+            type="text"
+            name="phone-number"
+            id="phone_number"
+            placeholder="Enter Phone number..."
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="cnic">CNIC:</label>
+          <input
+            type="text"
+            name="cnic"
+            id="cnic"
+            placeholder="00000-000000-0"
+            pattern="\d{5}-\d{7}-\d{1}"
+            maxlength="15"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <label for="status">Marital Status</label>
+          <select name="Marital Status" id="status" required>
+            <option value="">---Select---</option>
+            <option value="Single">single</option>
+            <option value="Married">Married</option>
+            <option value="Engaged">Engaged</option>
+            <option value="Divorced">Divorced</option>
+          </select>
+        </div>
+        <div>
+          <h3>Address:</h3>
+          <textarea
+            name="address"
+            id="address"
+            style="width: 200px; height: 50px"
+            placeholder="Enter Address..."
+            required
+          ></textarea>
+        </div>
+
+        <table border="1">
+          <h3>Marks Details</h3>
+          <thead>
+            <th>class</th>
+            <th><label for="passing_year">Passing_Year</label></th>
+            <th><label for="Total_Marks">Total_Marks</label></th>
+            <th><label for="Obtain_Marks">Obtain_Marks</label></th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td style="text-align: center">Matric</td>
+              <td>
+                <input
+                  type="text"
+                  name="Passing_ year"
+                  id="passing_year"
+                  placeholder="passing_year"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="Total_marks"
+                  id="Total_marks"
+                  placeholder="Total_Marks"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="obtain_marks"
+                  id="obtain_marks"
+                  placeholder="Obtain_Marks"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td>Intermediate</td>
+              <td>
+                <input
+                  type="text"
+                  name="Passing_year"
+                  id="passing_year"
+                  placeholder="passing_year"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="Total_marks"
+                  id="Total_marks"
+                  placeholder="Total_Marks"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="obtain_marks"
+                  id="obtain_marks"
+                  placeholder="Obtain_Marks"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+
+        <button type="submit">Submit Form</button>
+      </form>
+    </div>
+  </body>
+</html>
