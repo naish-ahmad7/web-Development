@@ -1,0 +1,187 @@
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather checker</title>
+
+    <style>
+
+        .cont
+        {
+            display: flex;
+            flex-direction: column;
+                                align-items: center;
+        justify-content: center;
+
+        }
+      .cont h1 {
+        font-family:
+          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+
+      }
+
+      .input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        border: 2px solid black;
+        border-radius: 12px;
+        padding: 20px;
+        width: 195px;
+      }
+
+      .name {
+        font-family:
+          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        padding: 10px;
+        /* margin: 10px; */
+      }
+
+      .place {
+        padding: 10px;
+        width: 169px;
+        font-size: 17px;
+      }
+
+      .btn {
+        width: 135px;
+        margin: 10px;
+        font-weight: 700;
+        font-size: 17px;
+        padding: 14px;
+        border: transparent;
+        border-radius: 12px;
+        background-color: rgb(174, 74, 96);
+        color: white;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        /* background-color: green; */
+        background-color: rgb(190, 61, 89);
+        transform: translateY(-3px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <h1>Weather checker</h1>
+      <form class="input">
+        <label class="name" for="check">City Name: </label>
+        <input
+          class="place"
+          type="text"
+          id="check"
+          placeholder="Enter city name..."
+        />
+        <button class="btn">Search</button>
+      </form>
+    </div>
+
+    <script>
+      let data = document.querySelector(".place");
+      let button = document.querySelector(".btn");
+      let cont = document.querySelector(".cont");
+      let weather_Info = document.createElement("div");
+      let heading = document.createElement("h3");
+      let para1 = document.createElement("p");
+      let para2 = document.createElement("p");
+      let para3 = document.createElement("p");
+      let para4 = document.createElement("p");
+      let para5 = document.createElement("p");
+      let para6 = document.createElement("p");
+
+      cont.append(weather_Info);
+      weather_Info.append(heading);
+      weather_Info.append(para1);
+      weather_Info.append(para2);
+      weather_Info.append(para3);
+      weather_Info.append(para4);
+      weather_Info.append(para5);
+      weather_Info.append(para6);
+      weather_Info.setAttribute("class", "result");
+
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+        //   console.log(data.value);
+
+        let city = data.value;
+        // console.log(city);
+
+        let getWeather = async () => {
+          let first_api = await fetch(
+            `https://geocoding-api.open-meteo.com/v1/search?name=${city}&count=5`,
+          );
+
+          let response = await first_api.json();
+
+          let latitude = response.results[0].latitude;
+          let longitude = response.results[0].longitude;
+
+            // console.log(response.results[0]);
+          //   console.log(`City Name: ${response.results[0].name}`);
+          //   console.log(`Latitude: ${response.results[0].latitude}`);
+          //   console.log(`Longitude: ${response.results[0].longitude}`);
+          //   console.log(`country: ${response.results[0].country}`);
+
+          let second_api = await fetch(
+            `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,weather_code`,
+          );
+
+          let second_response = await second_api.json();
+
+        //   console.log(second_response);
+         
+          heading.innerHTML = `Details of your City...`;
+          para1.innerHTML = `City Name: ${response.results[0].name}`;
+        //   para2.innerHTML = `Latitude: ${response.results[0].latitude}`;
+        //   para3.innerHTML = `Longitude: ${response.results[0].longitude}`;
+          para4.innerHTML = `Country: ${response.results[0].country}`;
+          para5.innerHTML = `Temprature: ${second_response.current.temperature_2m}°C`;
+
+        };
+        getWeather();
+      });
+    </script>
+  </body>
+</html> -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Checker</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="cont">
+      <h1>Weather Checker</h1>
+
+      <form class="input">
+        <label class="name" for="check">City Name</label>
+
+        <input
+          class="place"
+          type="text"
+          id="check"
+          placeholder="Enter city name..."
+        />
+
+        <button class="btn">Search Weather</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
